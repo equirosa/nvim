@@ -1,10 +1,13 @@
 vim.api.nvim_exec([[
     packadd nvim-treesitter
     packadd nvim-treesitter-textobjects
+	packadd nvim-ts-context-commentstring
     packadd playground
 ]], false)
 
 require("nvim-treesitter.configs").setup {
+
+    context_commentstring = {enable = true, config = {lua = '-- %s'}},
 
     highlight = {enable = true},
 
