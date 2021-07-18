@@ -86,8 +86,7 @@ require('telescope').setup({
                 "*.git/*", "*/tmp/*", '*.vscode/*', '*node_modules/*'
             },
             workspaces = {
-                ["nvim"] = "/home/snsm/.config/nvim",
-                ["automation"] = "/home/snsm/documents/code/automation/"
+                ["nvim"] = "/home/kiri/.config/nvim"
             }
         }
     }
