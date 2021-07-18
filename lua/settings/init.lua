@@ -57,8 +57,6 @@ local options = {
 }
 
 U.apply_options(options)
-U.apply_globals({
-    python3_host_prog = "/home/snsm/.config/virtualenvs/neovim/bin/python"
-})
+U.apply_globals({})
 
 require('settings._augroups')
