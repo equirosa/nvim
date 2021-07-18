@@ -31,7 +31,7 @@ local options = {
     mouse = 'a',
 
     -- Tabs & Spaces
-    expandtab = true, -- Use spaces instead of tabs
+    expandtab = false,
     smarttab = true,
     smartindent = true, -- Insert indents automatically
     cmdheight = 2,
