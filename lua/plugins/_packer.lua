@@ -63,9 +63,8 @@ return require('packer').startup(function(use)
         'RRethy/vim-illuminate', -- 'glepnir/dashboard-nvim',
         'Yggdroot/indentLine', 'gennaro-tedesco/nvim-peekup', -- view register contents
         'norcalli/nvim-colorizer.lua', -- colored hex codes
-        'akinsho/nvim-bufferline.lua', {'dracula/vim', as = 'dracula'},
-        {'joshdick/onedark.vim', disable = true, opt = true},
-        {'eddyekofo94/gruvbox-flat.nvim'}, 'szw/vim-maximizer' -- Toggle size of split windows
+        'akinsho/nvim-bufferline.lua', {'eddyekofo94/gruvbox-flat.nvim'},
+        'szw/vim-maximizer' -- Toggle size of split windows
     }
 
     -- Treesitter
