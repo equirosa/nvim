@@ -32,18 +32,18 @@ require('formatter').setup({
                 return {
                     exe = "astyle",
                     args = {
-                        "mode=java", "--style=java", "-M120", -- -M (match continuation indent) 
-                        "-xC80", -- -xC (max code length) 
-                        "-xt4", -- -xt (indent continuation) 
-                        "-xe", -- -xe (delete empty lines) 
+                        "mode=java", "--style=java", "-M120", -- -M (match continuation indent)
+                        "-xC80", -- -xC (max code length)
+                        "-xt4", -- -xt (indent continuation)
+                        "-xe", -- -xe (delete empty lines)
                         "-xg" -- -xg (pad comma)
-                        -- -xU (indent after parens) 
+                        -- -xU (indent after parens)
                     },
                     stdin = true
                 }
             end
         },
-        -- let g:formatdef_cstm_java='"astyle --mode=java --style=java -M120 -xC80 -xt4 -xe -xg"' 
+        -- let g:formatdef_cstm_java='"astyle --mode=java --style=java -M120 -xC80 -xt4 -xe -xg"'
         -- let g:formatters_java=['cstm_java']
 
         json = {prettier},
