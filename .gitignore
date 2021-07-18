@@ -3,3 +3,4 @@
 undodir/
 spell/
 test.py
+**/packer_compiled.*
