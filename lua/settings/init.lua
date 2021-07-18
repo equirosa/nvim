@@ -51,7 +51,7 @@ local options = {
     breakindent = true,
     clipboard = 'unnamedplus',
     encoding = 'UTF-8',
-    foldenable = false,
+    foldenable = true,
     foldmethod = 'syntax',
     cursorline = true
 }
