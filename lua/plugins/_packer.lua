@@ -124,6 +124,6 @@ return require('packer').startup(function(use)
     use {
         'mattn/emmet-vim', { -- Lua
             'euclidianAce/BetterLua.vim'
-        }
+        }, {'LnL7/vim-nix', opt = true, ft = {'nix'}}
     }
 end)
