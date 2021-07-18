@@ -158,7 +158,7 @@ local M = {
 
     live_grep = function()
         require("telescope.builtin").grep_string(
-            {shorten_path = true, search = vim.fn.input("Grep String > ")})
+            {path_display = true, search = vim.fn.input("Grep String > ")})
     end,
 
     lsp_code_actions = function()
