@@ -10,7 +10,6 @@ let g:coc_global_extensions = [
             \ 'coc-java',
             \ 'coc-java-debug',
             \ 'coc-json',
-            \ 'coc-lua',
             \ 'coc-pairs',
             \ 'coc-prettier',
             \ 'coc-pyright',
