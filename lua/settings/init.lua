@@ -1,4 +1,6 @@
 local U = require('utils')
+local fn = vim.fn
+local xdg_data_home_nvim = fn.stdpath('data')
 
 vim.cmd 'syntax enable'
 vim.cmd 'filetype plugin indent on'
@@ -42,7 +44,7 @@ local options = {
     backup = false,
     writebackup = false,
     swapfile = false,
-    undodir = '/home/snsm/.config/nvim/undodir',
+    undodir = xdg_data_home_nvim .. 'undodir',
 
     -- Text & Breaks
     textwidth = 79,
