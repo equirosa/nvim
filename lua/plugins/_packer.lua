@@ -68,16 +68,14 @@ return require('packer').startup(function(use)
     }
 
     -- Treesitter
-    use { -- Syntax
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate',
-        requires = {
-            'JoosepAlviste/nvim-ts-context-commentstring',
-            'nvim-treesitter/nvim-treesitter-textobjects',
-            'windwp/nvim-ts-autotag', 'p00f/nvim-ts-rainbow',
-            {'nvim-treesitter/playground', opt = true},
-			'nvim-treesitter/nvim-treesitter-refactor'
-        }
+    use {
+        { -- Syntax
+            'nvim-treesitter/nvim-treesitter',
+            run = ':TSUpdate'
+        }, 'JoosepAlviste/nvim-ts-context-commentstring',
+        'nvim-treesitter/nvim-treesitter-textobjects', 'windwp/nvim-ts-autotag',
+        'p00f/nvim-ts-rainbow', {'nvim-treesitter/playground', opt = true},
+        'nvim-treesitter/nvim-treesitter-refactor'
     }
 
     -- COC.nvim
@@ -85,6 +83,12 @@ return require('packer').startup(function(use)
         'fannheyward/telescope-coc.nvim',
         {'neoclide/coc.nvim', branch = 'release'}
     }
+
+    -- LSP
+    -- use {
+    -- 	'neovim/nvim-lspconfig',
+    -- 	'kabouzeid/nvim-lspinstall'
+    -- }
 
     -- Snippets
     use {
@@ -124,8 +128,7 @@ return require('packer').startup(function(use)
 
     -- Lang specific
     use {
-        'mattn/emmet-vim', { -- Lua
-            'euclidianAce/BetterLua.vim'
-        }, {'LnL7/vim-nix', opt = true, ft = {'nix'}}
+        'mattn/emmet-vim', 'euclidianAce/BetterLua.vim',
+        {'LnL7/vim-nix', opt = true, ft = {'nix'}}
     }
 end)
