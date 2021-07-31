@@ -4,6 +4,8 @@ vim.api.nvim_exec([[
 	packadd nvim-ts-context-commentstring
 	packadd nvim-ts-rainbow
     packadd playground
+	set foldmethod=expr
+	set foldexpr=nvim_treesitter#foldexpr()
 ]], false)
 
 require("nvim-treesitter.configs").setup {
