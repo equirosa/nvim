@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
     use {
         {'tpope/vim-dispatch', cmd = {'Dispatch', 'Start', 'Focus', 'Make'}},
         'machakann/vim-sandwich', 'tpope/vim-unimpaired',
-        'tpope/vim-commentary', 'tpope/vim-abolish', 'junegunn/vim-easy-align', -- better tabularize
+        'terrortylor/nvim-comment', 'tpope/vim-abolish', 'junegunn/vim-easy-align', -- better tabularize
         'editorconfig/editorconfig-vim', 'dyng/ctrlsf.vim', -- edit search matches in multiple files
         {'metakirby5/codi.vim', opt = true, cmd = 'Codi'}, -- scratch pad
         { -- Sane buffer/window deletion.
