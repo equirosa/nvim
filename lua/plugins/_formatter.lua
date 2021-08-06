@@ -74,7 +74,7 @@ require('formatter').setup({
                 return {
                     exe = "nixpkgs-fmt",
                     args = {vim.api.nvim_buf_get_name(0)},
-                    stdin = true
+                    stdin = false
                 }
             end
         },
@@ -96,6 +96,6 @@ require('formatter').setup({
 vim.api.nvim_exec([[
 augroup FormatAutogroup
   autocmd!
-  autocmd BufWritePost *.css,*.graphql,*.html,*.js,*.json,*.jsx,*.lua,*.md,*.mjs,*.py,*.rs,*.scss,*.ts,*.tsx,*.yaml FormatWrite
+  autocmd BufWritePost *.css,*.graphql,*.html,*.js,*.json,*.jsx,*.lua,*.md,*.mjs,*.py,*.rs,*.scss,*.ts,*.tsx,*.yaml,*.nix FormatWrite
 augroup END
 ]], true)
