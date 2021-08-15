@@ -67,8 +67,8 @@
       "filetypes": ["gdscript"],
       "port": 6008
     },
-    "nix":{
-      "filetypes": [ "nix" ],
+    "nix": {
+      "filetypes": ["nix"],
       "command": "rnix-lsp"
     }
   },
