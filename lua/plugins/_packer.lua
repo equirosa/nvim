@@ -20,7 +20,8 @@ return require('packer').startup(function(use)
     use {
         {'tpope/vim-dispatch', cmd = {'Dispatch', 'Start', 'Focus', 'Make'}},
         'machakann/vim-sandwich', 'tpope/vim-unimpaired',
-        'terrortylor/nvim-comment', 'tpope/vim-abolish', 'junegunn/vim-easy-align', -- better tabularize
+        'terrortylor/nvim-comment', 'tpope/vim-abolish',
+        'junegunn/vim-easy-align', -- better tabularize
         'editorconfig/editorconfig-vim', 'dyng/ctrlsf.vim', -- edit search matches in multiple files
         {'metakirby5/codi.vim', opt = true, cmd = 'Codi'}, -- scratch pad
         { -- Sane buffer/window deletion.
@@ -64,8 +65,10 @@ return require('packer').startup(function(use)
         'RRethy/vim-illuminate', 'Yggdroot/indentLine',
         'gennaro-tedesco/nvim-peekup', -- view register contents
         'norcalli/nvim-colorizer.lua', -- colored hex codes
-        'akinsho/nvim-bufferline.lua', {'eddyekofo94/gruvbox-flat.nvim'},
-        'szw/vim-maximizer' -- Toggle size of split windows
+        {
+            'akinsho/nvim-bufferline.lua',
+            requires = 'kyazdani42/nvim-web-devicons'
+        }, {'eddyekofo94/gruvbox-flat.nvim'}, 'szw/vim-maximizer' -- Toggle size of split windows
     }
 
     -- Treesitter
@@ -76,7 +79,8 @@ return require('packer').startup(function(use)
         }, 'JoosepAlviste/nvim-ts-context-commentstring',
         'nvim-treesitter/nvim-treesitter-textobjects', 'windwp/nvim-ts-autotag',
         'p00f/nvim-ts-rainbow', {'nvim-treesitter/playground', opt = true},
-        'nvim-treesitter/nvim-treesitter-refactor'
+        'nvim-treesitter/nvim-treesitter-refactor',
+		'cstrahan/tree-sitter-nix'
     }
 
     -- COC.nvim
