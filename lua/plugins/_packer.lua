@@ -120,8 +120,7 @@ return require('packer').startup(function(use)
                 {'mzlogin/vim-markdown-toc', opt = true, cmd = 'GenTocMarked'}
             },
             ft = {'markdown'}
-        }, {'dhruvasagar/vim-table-mode', ft = {'text', 'markdown'}},
-        {'junegunn/goyo.vim', ft = {'text', 'markdown'}, opt = true}
+        }, {'dhruvasagar/vim-table-mode', ft = {'text', 'markdown'}}
     }
 
     -- Status line
