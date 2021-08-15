@@ -48,7 +48,8 @@ return require('packer').startup(function(use)
             'rhysd/git-messenger.vim',
             cmd = 'GitMessenger',
             opt = true
-        }
+        },
+        use {'amirrezaask/blame.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
     }
 
     -- Motion and text objects
