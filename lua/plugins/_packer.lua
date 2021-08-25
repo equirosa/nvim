@@ -79,8 +79,7 @@ return require('packer').startup(function(use)
         }, 'JoosepAlviste/nvim-ts-context-commentstring',
         'nvim-treesitter/nvim-treesitter-textobjects', 'windwp/nvim-ts-autotag',
         'p00f/nvim-ts-rainbow', {'nvim-treesitter/playground', opt = true},
-        'nvim-treesitter/nvim-treesitter-refactor',
-		'cstrahan/tree-sitter-nix'
+        'nvim-treesitter/nvim-treesitter-refactor'
     }
 
     -- COC.nvim
@@ -131,8 +130,5 @@ return require('packer').startup(function(use)
     use {'glepnir/galaxyline.nvim', branch = 'main'}
 
     -- Lang specific
-    use {
-        'mattn/emmet-vim', 'euclidianAce/BetterLua.vim',
-        {'LnL7/vim-nix', opt = true, ft = {'nix'}}
-    }
+    use {'mattn/emmet-vim', 'euclidianAce/BetterLua.vim'}
 end)
