@@ -103,7 +103,6 @@ return require('packer').startup(function(use)
     -- Project
     use {
         'nvim-telescope/telescope-project.nvim', 'airblade/vim-rooter',
-        'tpope/vim-projectionist'
     }
 
     -- Documents
@@ -130,5 +129,8 @@ return require('packer').startup(function(use)
     use {'glepnir/galaxyline.nvim', branch = 'main'}
 
     -- Lang specific
-    use {'mattn/emmet-vim', 'euclidianAce/BetterLua.vim'}
+    use {
+        {'mattn/emmet-vim', opt = true, ft = {'html'}},
+        'euclidianAce/BetterLua.vim'
+    }
 end)
