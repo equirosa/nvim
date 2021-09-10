@@ -17,28 +17,6 @@
 
 ## Installation
 
-### Nvim DEV
-
-```shell
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt update && sudo apt upgrade -y
-sudo apt install neovim
-```
-
-### Dependencies
-
-```shell
-# node
-nvm install --lts
-npm install neovim
-
-# python3
-mkvirtualenv neovim
-pip install pynvim rope autopep8 pylint
-git clone https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
-
 ### Plugins
 
 Run the following commands inside vim:
@@ -103,27 +81,3 @@ T.initialize_mappings = function()
     T.file_pickers.git_files(T.chord('f'))
 end
 ```
-
-## Formatter
-
-To find detailed information about formatting configurations, read [this documentation](https://github.com/mhartington/formatter.nvim/blob/master/README.md)
-
-Below you can see the configurations I currently have working
-
-- [ ] c
-- [ ] c#
-- [ ] cpp
-- [x] css
-- [x] html
-- [ ] java
-- [x] javascript
-- [x] json
-- [x] lua
-- [x] markdown
-- [x] python
-- [x] sass
-- [x] scss
-- [ ] shell script
-- [ ] sql
-- [x] typescript
-- [x] yaml
