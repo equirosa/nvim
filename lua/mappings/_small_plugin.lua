@@ -1,4 +1,5 @@
 local U = require('utils')
+-- Hop
 U.run_lua('n', ';;', 'require("hop").hint_words()')
 U.run_vim('n', ';l', 'HopLine')
 U.run_vim('n', ';s', 'HopPattern')
@@ -12,8 +13,6 @@ U.run_vim('n', '<leader>bX', 'Sayonara!')
 U.run_vim('n', '<C-w>m', ':MaximizerToggle<CR>')
 U.run_vim('t', '<C-w>m', '<C-\\><C-n> :MaximizerToggle<CR>')
 U.apply_globals({
-    goyo_width = '75%',
-    goyo_height = '90%',
     Illuminate_delay = 300,
     Illuminate_ftblacklist = {'coc-explorer'},
     Illuminate_highlightUnderCursor = 0,
