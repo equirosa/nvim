@@ -14,7 +14,7 @@ U.run_vim('n', '<C-w>m', ':MaximizerToggle<CR>')
 U.run_vim('t', '<C-w>m', '<C-\\><C-n> :MaximizerToggle<CR>')
 U.apply_globals({
     Illuminate_delay = 300,
-    Illuminate_ftblacklist = {'coc-explorer'},
+    Illuminate_ftblacklist = {},
     Illuminate_highlightUnderCursor = 0,
     indentLine_char_list = {'┊', '┆', '¦', '|'},
     rooter_patterns = {

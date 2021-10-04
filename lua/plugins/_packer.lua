@@ -79,13 +79,6 @@ return require('packer').startup(function(use)
         }, 'JoosepAlviste/nvim-ts-context-commentstring',
         'nvim-treesitter/nvim-treesitter-textobjects', 'windwp/nvim-ts-autotag',
         'p00f/nvim-ts-rainbow', {'nvim-treesitter/playground', opt = true},
-        'nvim-treesitter/nvim-treesitter-refactor'
-    }
-
-    -- COC.nvim
-    use {
-        'fannheyward/telescope-coc.nvim',
-        {'neoclide/coc.nvim', branch = 'release'}
     }
 
     -- LSP

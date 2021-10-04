@@ -78,11 +78,6 @@ require('bufferline').setup {
         tab_size = 18,
         diagnostics = false,
         offsets = {
-            {
-                filetype = 'coc-explorer',
-                text = 'File Explorer',
-                text_align = 'center'
-            }
         },
         show_buffer_icons = true, -- disable filetype icons for buffers
         show_buffer_close_icons = true,

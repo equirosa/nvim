@@ -22,7 +22,6 @@
 Run the following commands inside vim:
 
 - PackerInstall
-- CocInstall
 
 ## Plugins
 
