@@ -86,6 +86,9 @@ return require('packer').startup(function(use)
     -- 	'kabouzeid/nvim-lspinstall'
     -- }
 
+    -- Completion
+    use {'hrsh7th/nvim-cmp', 'hrsh7th/cmp-path', 'hrsh7th/cmp-buffer'}
+
     -- Snippets
     use {
         'xabikos/vscode-javascript', 'cstrap/python-snippets',
