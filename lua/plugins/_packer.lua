@@ -63,7 +63,7 @@ return require('packer').startup(function(use)
     use {
         'RRethy/vim-illuminate', 'Yggdroot/indentLine',
         'gennaro-tedesco/nvim-peekup', -- view register contents
-        'norcalli/nvim-colorizer.lua', -- colored hex codes
+        {'norcalli/nvim-colorizer.lua', opt = true, ft = {'css'}}, -- colored hex codes
         {
             'akinsho/nvim-bufferline.lua',
             requires = 'kyazdani42/nvim-web-devicons'
