@@ -12,7 +12,7 @@ end
 
 return require('packer').startup(function(use)
     -- To handle Lua configuration
-    use {'wbthomason/packer.nvim', 'tami5/sql.nvim'}
+    use {'wbthomason/packer.nvim'}
     use {'kyazdani42/nvim-web-devicons', opt = false}
     use {'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim'}
 
@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
         'machakann/vim-sandwich', 'tpope/vim-unimpaired',
         'terrortylor/nvim-comment', 'tpope/vim-abolish',
         'junegunn/vim-easy-align', -- better tabularize
-        'editorconfig/editorconfig-vim', 'dyng/ctrlsf.vim', -- edit search matches in multiple files
+        'dyng/ctrlsf.vim', -- edit search matches in multiple files
         {'metakirby5/codi.vim', opt = true, cmd = 'Codi'}, -- scratch pad
         { -- Sane buffer/window deletion.
             'mhinz/vim-sayonara',
