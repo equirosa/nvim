@@ -77,7 +77,7 @@ return require('packer').startup(function(use)
             run = ':TSUpdate'
         }, 'JoosepAlviste/nvim-ts-context-commentstring',
         'nvim-treesitter/nvim-treesitter-textobjects', 'windwp/nvim-ts-autotag',
-        'p00f/nvim-ts-rainbow', {'nvim-treesitter/playground', opt = true},
+        'p00f/nvim-ts-rainbow', {'nvim-treesitter/playground', opt = true}
     }
 
     -- LSP
@@ -93,9 +93,7 @@ return require('packer').startup(function(use)
     }
 
     -- Project
-    use {
-        'nvim-telescope/telescope-project.nvim', 'airblade/vim-rooter',
-    }
+    use {'nvim-telescope/telescope-project.nvim', 'airblade/vim-rooter'}
 
     -- Documents
     use {
