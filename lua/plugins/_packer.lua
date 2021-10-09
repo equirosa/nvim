@@ -30,8 +30,10 @@ return require('packer').startup(function(use)
             opt = true
         }, -- Wrapper for an external formatter
         {"mhartington/formatter.nvim", opt = true, cmd = "Format"}
-
     }
+
+    -- File Explorer
+    use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons'}
 
     -- Telescope
     use {
