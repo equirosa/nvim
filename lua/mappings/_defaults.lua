@@ -11,8 +11,18 @@ U.map_global('n', '<C-l>', '<C-w>l')
 U.map_global('n', 'J', 'mzJ`z')
 U.map_global('n', '[t', 'tabp')
 U.map_global('n', ']t', 'tabn')
+U.map_global('n', 'Y', 'y$')
 
 U.run_lua('n', '<leader>w', 'require("utils").save_all()') -- K.normal('<C-s>', ':wa<CR>')
+
+-- Undo Break Points
+local undo_break_points = {
+	',','.','!','?'
+}
+
+for _, point in pairs(undo_break_points) do
+	U.map_global('n', point, point .. '<C-g>U')
+end
 
 -- Date insertion
 U.map_global('i', '<Leader>ymd', '<C-R>=strftime("%y%m%d")<CR>')
