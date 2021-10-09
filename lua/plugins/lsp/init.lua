@@ -6,6 +6,7 @@ for _, server in pairs(servers) do
 end
 
 require('plugins.lsp._lspkind')
+require('plugins.lsp._lua')
 
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
