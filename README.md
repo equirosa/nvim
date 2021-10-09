@@ -3,8 +3,6 @@
 <!-- vim-markdown-toc Marked -->
 
 * [Installation](#installation)
-  * [Nvim DEV](#nvim-dev)
-  * [Dependencies](#dependencies)
   * [Plugins](#plugins)
 * [Plugins](#plugins)
   * [Download vba file](#download-vba-file)
@@ -23,7 +21,7 @@ Run the following commands inside vim:
 
 - PackerInstall
 
-## Plugins
+## Plugins Config
 
 To check the plugins installed go to **lua>plugins>\_packer.lua**
 
