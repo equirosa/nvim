@@ -81,18 +81,21 @@ return require('packer').startup(function(use)
     }
 
     -- LSP
-    -- use {
-    -- 	'neovim/nvim-lspconfig',
-    -- 	'kabouzeid/nvim-lspinstall'
-    -- }
+    use {
+        'neovim/nvim-lspconfig', 'kabouzeid/nvim-lspinstall',
+        'hrsh7th/lspkind-nvim'
+    }
 
     -- Completion
-    use {'hrsh7th/nvim-cmp', 'hrsh7th/cmp-path', 'hrsh7th/cmp-buffer'}
+    use {
+        'hrsh7th/nvim-cmp', 'hrsh7th/cmp-path', 'hrsh7th/cmp-buffer',
+        'hrsh7th/cmp-nvim-lsp', 'saadparwaiz1/cmp_luasnip'
+    }
 
     -- Snippets
     use {
         'xabikos/vscode-javascript', 'cstrap/python-snippets',
-        'ylcnfrht/vscode-python-snippet-pack'
+        'ylcnfrht/vscode-python-snippet-pack', 'L3MON4D3/LuaSnip'
     }
 
     -- Project
