@@ -6,5 +6,6 @@ require('plugins._treesitter')
 require('plugins._bufferline')
 require('plugins._nvim-comment')
 require('plugins._nvim-cmp')
+require('plugins._nvim-autopairs') -- Must go *AFTER* _nvim-cmp
 require('plugins.git')
 require('plugins.lsp')

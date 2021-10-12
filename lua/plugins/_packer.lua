@@ -94,6 +94,11 @@ return require('packer').startup(function(use)
         'hrsh7th/cmp-nvim-lsp', 'saadparwaiz1/cmp_luasnip'
     }
 
+	-- Pairs
+	use {
+		'windwp/nvim-autopairs'
+	}
+
     -- Snippets
     use {
         'xabikos/vscode-javascript', 'cstrap/python-snippets',
