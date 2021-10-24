@@ -13,4 +13,6 @@ end
 
 require('plugins.lsp._lspkind')
 require('plugins.lsp._lua')
+
+-- Generic LSP config
 require'lspconfig'.rnix.setup {capabilities = capabilities}
